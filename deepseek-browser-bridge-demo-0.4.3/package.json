@@ -1,0 +1,23 @@
+{
+  "name": "deepseek-browser-bridge-demo",
+  "version": "0.4.3",
+  "private": true,
+  "description": "A local CLI bridge to DeepSeek Web through a persistent Chromium background daemon — no DeepSeek API key required.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "ds": "node src/cli.mjs",
+    "setup": "node src/cli.mjs setup",
+    "doctor": "node src/cli.mjs doctor",
+    "ask": "node src/cli.mjs ask",
+    "new": "node src/cli.mjs new",
+    "history": "node src/cli.mjs history",
+    "stop": "node src/cli.mjs stop",
+    "daemon": "node src/daemon.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
